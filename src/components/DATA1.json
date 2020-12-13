@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "First Foundation Inc.",
+    "image": "https://robohash.org/ducimuscumlabore.jpg?size=50x50&set=set1",
+    "content": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+  },
+  {
+    "id": 2,
+    "title": "Weyco Group, Inc.",
+    "image": "https://robohash.org/quietmagni.jpg?size=50x50&set=set1",
+    "content": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "id": 3,
+    "title": "Synergy Pharmaceuticals, Inc.",
+    "image": "https://robohash.org/quibusdamdolorumfugit.jpg?size=50x50&set=set1",
+    "content": "Duis at velit eu est congue elementum. In hac habitasse platea dictumst."
+  },
+  {
+    "id": 4,
+    "title": "Kenon Holdings Ltd.",
+    "image": "https://robohash.org/maioresvitaearchitecto.jpg?size=50x50&set=set1",
+    "content": "Phasellus in felis. Donec semper sapien a libero. Nam dui."
+  },
+  {
+    "id": 5,
+    "title": "Sanofi",
+    "image": "https://robohash.org/debitisprovidentvoluptates.jpg?size=50x50&set=set1",
+    "content": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante."
+  },
+  {
+    "id": 6,
+    "title": "Southern California Edison Company",
+    "image": "https://robohash.org/nostrumteneturipsum.jpg?size=50x50&set=set1",
+    "content": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus."
+  },
+  {
+    "id": 7,
+    "title": "Fulgent Genetics, Inc.",
+    "image": "https://robohash.org/voluptasquiautem.jpg?size=50x50&set=set1",
+    "content": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus."
+  },
+  {
+    "id": 8,
+    "title": "S&T Bancorp, Inc.",
+    "image": "https://robohash.org/omnisexpeditaeum.jpg?size=50x50&set=set1",
+    "content": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula."
+  }
+]
