@@ -171,16 +171,16 @@
     },
     {
       "id": 14,
-      "firstName": "Leyla",
-      "lastName": "Farfolomeev",
+      "firstName": "Ebere",
+      "lastName": "Moses",
       "createdAt": "1/22/2020",
       "gender": "Female",
       "alive": true,
-      "christainName": "Jayme",
-      "stateOfOrigin": "Florida",
-      "lga": "United States",
+      "christainName": "Elizabeth",
+      "stateOfOrigin": "Enugu",
+      "lga": "Nsukka",
       "ordained": true,
-      "nameOfPriest": "Jayme Farfolomeev"
+      "nameOfPriest": "Rev Henry Okafor"
     },
     {
       "id": 15,

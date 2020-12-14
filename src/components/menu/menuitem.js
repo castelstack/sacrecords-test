@@ -16,11 +16,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-items: center;
+  text-align: center;
 `;
 
 const Icon = styled.img`
-  margin-right: 4%;
-  margin-left: 25%;
+  margin-right: 3%;
+  margin-left: 15%;
 `;
 
 const active = {
@@ -32,6 +33,7 @@ const MenuLink = styled(NavLink)`
 
   display: flex;
   align-items: center;
+  
   width: 230px;
   height: 58px;
 
@@ -63,32 +65,32 @@ const Menulist = () => {
         <Icon src={blog} alt='blog' />
         blog
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/' activeStyle={active}>
         <Icon src={printer} alt='print' />
-        print
+        Home for now
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
       <Icon src={event} alt='events and todos/' />
         Book Mass
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
         <Icon src={event} alt='events and todos/' />
         Events & Todo
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
         
         <Icon src={megaphone} alt='anouncement' />
         Anouncement
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
         <Icon src={eucharist} alt='parishes' />
         Parishes
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
         <Icon src={conversation} alt='About/ support' />
         About/ support
       </MenuLink>
-      <MenuLink to='/records' activeStyle={active}>
+      <MenuLink to='/record' activeStyle={active}>
         
         <Icon src={information} alt='information' />
         information

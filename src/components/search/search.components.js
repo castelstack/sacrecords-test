@@ -47,11 +47,11 @@ border-radius: 100px;
 
 
 
-const Search = () => {
+const Search = ({onChange, placeholder, ...props}) => {
   return (
-      <Container end='end'>
+      <Container end='end' >
           <Icon alt='search' src={SearchIcon} />
-          <InputSearch icon={SearchIcon} type='text'  name='search' placeholder='search e.g card'/>
+      <InputSearch icon={SearchIcon} type='text' name='search' placeholder={placeholder} onChange={onChange}/>
          
     </Container>
   );

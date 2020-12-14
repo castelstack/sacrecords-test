@@ -1,28 +1,22 @@
 import {
-  // Checkbox,
-  // FormControlLabel,
   Paper,
   TableBody,
   TableCell,
   TableRow,
   Typography,
-  //withStyles,
 } from "@material-ui/core";
 import React, { useState } from "react";
 import { useTable } from "./useTable";
-// import axios from "axios";
-import { TextInput } from "../../components/input/textInput";
 import DATAA from "../../components/DATAA.json";
-// import DATA from "../../components/DATA.json";
 import RecordDropdown from "../../components/dropdown/recordDd";
-// import SearchContainer from "../../containers/searchContainer/searchContainer"
 import { useEffect } from "react";
-import { Search } from "@material-ui/icons";
-//import { green, grey } from "@material-ui/core/colors";
+
+import Search from "../../components/search/search.components";
+
 const headCells = [
   { id: "firstName", label: "Firstname" },
   { id: "lastName", label: "Username" },
-  { id: "stateOfOrigin", label: "company",},
+  { id: "stateOfOrigin", label: "company" },
   { id: "gender", label: "street" },
   { id: "nameOfPriest", label: "suite", disabledSorting: true },
   { id: "dropdown" },
@@ -35,21 +29,13 @@ const Table = () => {
       return items;
     },
   });
- // const [api, setApi] = useState('');
-  
-  //const [state, setState] = React.useState({
-    //checked: true, 
-  //});
-
- 
-
 
   // api call with axios in useEffect hook
   useEffect(
     function effectFunction() {
       function fetchData() {
         const response = { DATAA };
-        
+
         const result = response.DATAA;
         setRecords(result);
         console.log(result);
@@ -70,54 +56,23 @@ const Table = () => {
 
   // onChange for search text field
   const searchHandler = (e) => {
-    
     let target = e.target;
     setFilterFn({
       fn: (items) => {
-        if (target.value === "")
-        return items;
+        if (target.value === "") return items;
         else
           return items.filter((x, api) =>
-            
-            x.gender.toLowerCase().includes(target.value)
-           
+            x.firstName.toLowerCase().includes(target.value)
           );
       },
     });
   };
 
-
-
-
-  // checkbox styling
-  // const GreenCheckbox = withStyles({
-  //   root: {
-  //     color: grey,
-  //     '&$checked': {
-  //       color: green[600],
-  //     },
-  //   },
-  //   checked: {},
-  // })((props) => <Checkbox color="default" {...props} />);
+  // Container with search field, table head, table body and table pagination
   return (
     <div>
       <Paper>
-      {/* <FormControlLabel
-        control={<GreenCheckbox checked={setState.checked} onChange={setApi('gender')} name="checkedG" />}
-        label="gender"
-        /> */}
-        
-        <TextInput
-          variant='outlined'
-          label='search records'
-          name='searchrecords'
-          size='small'
-          onChange={searchHandler}
-          icon={Search}
-        >
-          <Search />
-        </TextInput>
-
+        <Search onChange={searchHandler} placeholder='Search records' />
         <TblContainer
           style={{ border: "1px solid #DFE0EB", borderRadius: "10px" }}
         >

@@ -19,7 +19,8 @@ const Header = () => {
   return (
     <HeaderBox>
       <Logo small />
-      <Search />
+      <Search
+      placeholder='Search...'/>
       <Link to='/login'>
         <CustumButton type='submit' value='Login' />
       </Link>
