@@ -18,7 +18,7 @@ import Records from "../src/pages/records/records";
 
 import Blogs from "../src/pages/blog/blog";
 import Sidebar from "../src/components/sidebar/sidebar";
-import Test from "../src/pages/testing/test";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import { useStyles } from "./app.styles";
@@ -93,7 +93,7 @@ function App() {
             <Route path='/' exact component={Homepage} />
             <Route path='/overview' component={Overview} />
             <Route path='/records' component={Records} />
-            <Route path='/test' component={Test} />
+            
             <Route path='/blog' component={Blogs} />
           </Switch>
         </main>
