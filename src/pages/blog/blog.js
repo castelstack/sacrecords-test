@@ -36,7 +36,7 @@ display: flex;
 flex-direction: column;
 `;
 
-class Blog extends React.Component {
+class Blogs extends React.Component {
   constructor() {
     super();
 
@@ -224,7 +224,7 @@ class Blog extends React.Component {
           </BlogBox>
                 
           <TrendingPost>
-          <TitleHead >Trending posts</ TitleHead>
+          <TitleHead >Trending postss</ TitleHead>
           <TrendsContainer>
                 
                 {this.state.blog
@@ -248,4 +248,4 @@ class Blog extends React.Component {
     );
   }
 }
-export default Blog;
+export default Blogs;

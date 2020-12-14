@@ -1,28 +1,27 @@
 import React from "react";
 import clsx from "clsx";
-import {  useTheme } from "@material-ui/core/styles";
+import { useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
-import Header from '../src/components/header/header.components';
+import Header from "../src/components/header/header.components";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Homepage from "../src/pages/homepage/homepage";
-import Overview from "../src/pages/overview/overview.components";
+import Overview from "./pages/overview/overview";
 import Records from "../src/pages/records/records";
 
-import Blog from "../src/pages/blog/blog";
+import Blogs from "../src/pages/blog/blog";
 import Sidebar from "../src/components/sidebar/sidebar";
 import Test from "../src/pages/testing/test";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import { useStyles} from './app.styles'
-
+import { useStyles } from "./app.styles";
 
 function App() {
   const classes = useStyles();
@@ -43,12 +42,12 @@ function App() {
         <CssBaseline />
         <AppBar
           position='fixed'
-          color= 'inherit'
+          color='inherit'
           className={clsx(classes.appBar, {
             [classes.appBarShift]: open,
           })}
         >
-          <Toolbar  className={classes.tool}>
+          <Toolbar className={classes.tool}>
             <IconButton
               color='inherit'
               aria-label='open drawer'
@@ -58,7 +57,7 @@ function App() {
             >
               <MenuIcon />
             </IconButton>
-           <Header />
+            <Header />
           </Toolbar>
         </AppBar>
         <Drawer
@@ -95,7 +94,7 @@ function App() {
             <Route path='/overview' component={Overview} />
             <Route path='/records' component={Records} />
             <Route path='/test' component={Test} />
-            <Route path='/blog' component={Blog} />
+            <Route path='/blog' component={Blogs} />
           </Switch>
         </main>
       </Router>

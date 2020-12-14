@@ -63,32 +63,32 @@ const Menulist = () => {
         <Icon src={blog} alt='blog' />
         blog
       </MenuLink>
-      <MenuLink to='/' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         <Icon src={printer} alt='print' />
         print
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
       <Icon src={event} alt='events and todos/' />
         Book Mass
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         <Icon src={event} alt='events and todos/' />
         Events & Todo
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         
         <Icon src={megaphone} alt='anouncement' />
         Anouncement
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         <Icon src={eucharist} alt='parishes' />
         Parishes
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         <Icon src={conversation} alt='About/ support' />
         About/ support
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='' activeStyle={active}>
         
         <Icon src={information} alt='information' />
         information

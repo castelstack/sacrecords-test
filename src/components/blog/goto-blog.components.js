@@ -32,7 +32,7 @@ const SubText = styled.h3({
   color: "#343434",
 });
 
-/*component with the go to blog */
+/*component with the go to blog button*/
 const gotoBlog = () => {
   return (
     <Container>

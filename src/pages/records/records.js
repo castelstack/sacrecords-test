@@ -1,16 +1,16 @@
 import React from "react";
-//import Table from "../../components/table/basicTable";
 import Table from "../../containers/useTable/table";
+import styled from "styled-components";
 
-const margin = {
-  margin: '0 50px'
-}
+const Container = styled.div`
+  margin: 0 50px;
+`;
+
 const Records = () => {
   return (
-    <div style={margin}>
+    <Container>
       <Table />
-      
-    </div>
+    </Container>
   );
 };
 

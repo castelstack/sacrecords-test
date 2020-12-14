@@ -14,7 +14,7 @@ const Title = styled.h1({
 
   display: "flex",
   alignItems: "center",
- 
+
   color: "#FFFFFF",
 });
 
@@ -25,35 +25,34 @@ const HeadContent = styled.h3({
   fontSize: "20px",
   lineHeight: "5px",
   /* identical to box height */
-  width: 'max-content',
+  width: "max-content",
   color: "#FFFFFF",
 });
 
 /* template box for blog heads */
-const BlogBlock = ({ title, headContent, image, link,...props }) => {
+const BlogBlock = ({ title, headContent, image, link, ...props }) => {
   return (
     <Link href={link}>
-    
-    <Container
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        borderRadius: "5px",
-        
-        height: "228px",
-        
-        display: 'flex',
-        flexDirection: 'column',
-        justifyItem: 'flex-end',
-        justifyContent: 'flex-end',
-        padding: '0 1rem'
-      }}
-    >
-      <Title>{title}</Title>
-      <HeadContent>{headContent}</HeadContent>
+      <Container
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          borderRadius: "5px",
+
+          height: "228px",
+
+          display: "flex",
+          flexDirection: "column",
+          justifyItem: "flex-end",
+          justifyContent: "flex-end",
+          padding: "0 1rem",
+        }}
+      >
+        <Title>{title}</Title>
+        <HeadContent>{headContent}</HeadContent>
       </Container>
-      </Link>
+    </Link>
   );
 };
 
