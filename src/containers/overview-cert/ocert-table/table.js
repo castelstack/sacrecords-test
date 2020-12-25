@@ -5,7 +5,7 @@ import MASS from "../../../components/MASS.json";
 
 import { useEffect } from "react";
 import styled from "styled-components";
-import Search from "../../../components/search/search.components";
+//import Search from "../../../components/search/search.components";
 import { TextSub } from '../../../constants/styles/constant.style';
 import CustomButton from '../../../components/button/button.components';
 import { useHistory } from "react-router-dom";
@@ -19,9 +19,9 @@ const Text = styled(TextSub)`
     font-size: 16px;
 `;
 
-const SearchBox = styled(Search)`
-  padding: 2rem 0;
-`;
+// const SearchBox = styled(Search)`
+//   padding: 2rem 0;
+// `;
 // array of table head cells label and data<thead>
 const headCells = [
   { id: "name", label: "Name" },
@@ -33,11 +33,11 @@ const headCells = [
 
 const OverviewCertTable = () => {
   const [mass, setMass] = useState([]);
-  const [filterFn, setFilterFn] = useState({
-    fn: (items) => {
-      return items;
-    },
-  });
+  // const [filterFn, setFilterFn] = useState({
+  //   fn: (items) => {
+  //     return items;
+  //   },
+  // });
 
   // api call with axios in useEffect hook
   useEffect(
@@ -65,23 +65,23 @@ const OverviewCertTable = () => {
   const {
     TblContainer,
     TblHead,
-    TblPagination,
+    
     massAfterPagingAndSorting,
-  } = TableContainer(mass, headCells, filterFn);
+  } = TableContainer(mass, headCells);
 
-  // onChange for search text field
-  const searchHandler = (e) => {
-    let target = e.target;
-    setFilterFn({
-      fn: (items) => {
-        if (target.value === "") return items;
-        else
-          return items.filter((x, api) =>
-            x.name.toLowerCase().includes(target.value)
-          );
-      },
-    });
-  };
+  // // onChange for search text field
+  // const searchHandler = (e) => {
+  //   let target = e.target;
+  //   setFilterFn({
+  //     fn: (items) => {
+  //       if (target.value === "") return items;
+  //       else
+  //         return items.filter((x, api) =>
+  //           x.name.toLowerCase().includes(target.value)
+  //         );
+  //     },
+  //   });
+  // };
 
 
   // Container with search field, table head, table body and table pagination

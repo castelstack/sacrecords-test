@@ -1,6 +1,6 @@
 import React from "react";
 import OverviewHead from "../../components/g-overview/g-overview.components";
-import Certificate from "../../components/certificate/certificate.components";
+//import Certificate from "../../components/certificate/certificate.components";
 import Trends from "../../components/trends/trends";
 import BlogContent from "../../components/blog-content/blog-content.components";
 import Chart from "../../components/chart/chart";
@@ -33,8 +33,8 @@ const Overview = () => {
       
       <OverviewHead />
       <CertTrends>
-        {/* <OverviewCert /> */}
-        <Certificate />
+         <OverviewCert /> 
+        {/* <Certificate /> */}
         <Trends small/>
       </CertTrends>
       <BlogContent />

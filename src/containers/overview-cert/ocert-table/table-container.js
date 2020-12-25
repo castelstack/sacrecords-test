@@ -3,7 +3,7 @@ import {
   Table,
   TableCell,
   TableHead,
-  TablePagination,
+ 
   TableRow,
   TableSortLabel,
 } from "@material-ui/core";
@@ -61,14 +61,14 @@ export const TableContainer = (mass, headCells, filterFn) => {
     );
   };
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
+  // const handleChangePage = (event, newPage) => {
+  //   setPage(newPage);
+  // };
 
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
+  // const handleChangeRowsPerPage = (event) => {
+  //   setRowsPerPage(parseInt(event.target.value, 10));
+  //   setPage(0);
+  // };
 
 
 // stable sort function
@@ -107,24 +107,24 @@ export const TableContainer = (mass, headCells, filterFn) => {
     );
   };
 
-  const TblPagination = () => {
-    return (
-      <TablePagination
-        component='div'
-        page={page}
-        rowsPerPageOptions={pages}
-        rowsPerPage={rowsPerPage}
-        count={mass.length}
-        onChangePage={handleChangePage}
-        onChangeRowsPerPage={handleChangeRowsPerPage}
-      />
-    );
-  };
+  // const TblPagination = () => {
+  //   return (
+  //     <TablePagination
+  //       component='div'
+  //       page={page}
+  //       rowsPerPageOptions={pages}
+  //       rowsPerPage={rowsPerPage}
+  //       count={mass.length}
+  //       onChangePage={handleChangePage}
+  //       onChangeRowsPerPage={handleChangeRowsPerPage}
+  //     />
+  //   );
+  // };
 
   return {
     TblContainer,
     TblHead,
-    TblPagination,
+    
     massAfterPagingAndSorting,
   };
 };
