@@ -1,11 +1,11 @@
 import React from "react";
 import OverviewHead from "../../components/g-overview/g-overview.components";
-//import Certificate from "../../components/certificate/certificate.components";
+import Certificate from "../../components/certificate/certificate.components";
 import Trends from "../../components/trends/trends";
 import BlogContent from "../../components/blog-content/blog-content.components";
 import Chart from "../../components/chart/chart";
 import Backup from "../../components/backup/backup";
-import OverviewCert from '../../containers/overview-cert/overview-cert';
+//import OverviewCert from '../../containers/overview-cert/overview-cert';
 import styled from "styled-components";
 
 const Container = styled.div({
@@ -33,8 +33,8 @@ const Overview = () => {
       
       <OverviewHead />
       <CertTrends>
-         <OverviewCert /> 
-        {/* <Certificate /> */}
+         {/* <OverviewCert />  */}
+        <Certificate />
         <Trends small/>
       </CertTrends>
       <BlogContent />
