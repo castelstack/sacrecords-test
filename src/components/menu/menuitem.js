@@ -1,101 +1,133 @@
 import React from "react";
 import styled from "styled-components";
 
-import blog from "../../images/blog.png";
-import conversation from "../../images/conversation.png";
-import dashboard from "../../images/dashboard.png";
-import eucharist from "../../images/eucharist.png";
-import event from "../../images/event.png";
-import information from "../../images/information.png";
-import megaphone from "../../images/megaphone.png";
-import records from "../../images/records.png";
-import printer from "../../images/printer.png";
+import AnnouncementRoundedIcon from "@material-ui/icons/AnnouncementRounded";
+import DashboardRoundedIcon from "@material-ui/icons/DashboardRounded";
+import FolderIcon from "@material-ui/icons/Folder";
+import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
+import PrintIcon from "@material-ui/icons/Print";
+import BookIcon from "@material-ui/icons/Book";
+import TodayIcon from "@material-ui/icons/Today";
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+
+import HouseIcon from "@material-ui/icons/House";
+import LiveHelpIcon from "@material-ui/icons/LiveHelp";
+import InfoIcon from "@material-ui/icons/Info";
 import { NavLink } from "react-router-dom";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  text-align: center;
-`;
+//import LIST from "./sidebar.json";
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-items: center;
 
-const Icon = styled.img`
-  margin-right: 3%;
-  margin-left: 15%;
-`;
+// `;
 
+const Item = styled.h4`
+  margin-left: 0.9rem;
+`;
 const active = {
-  color: "#1CD1A1",
-  backgroundColor: "rgba(0, 242, 184, 0.14)",
+  color: "white",
+  backgroundColor: "#1CD1A1",
+  boxShadow: "0 3px 4px rgba(0,0,0,0.15)",
+  fontWeight: 'bold',
 };
 const MenuLink = styled(NavLink)`
   text-decoration: none;
 
   display: flex;
   align-items: center;
-  
-  width: 230px;
-  height: 58px;
-
+  margin-bottom: 6px;
+  width: 239px;
+  height: 40px;
+  transition: all 0.5s ease-in;
   &:hover {
-    background: rgba(0, 242, 184, 0.14);
+    background: rgb(235, 233, 233);
+    color: gray;
   }
 
   padding: 1.5rem 2rem;
-  font-weight: bold;
-  font-size: 13px;
+  font-family: Antic Slab;
+  font-weight: 0;
+  font-size: 15px;
   line-height: 19.5px;
-  color: #979797;
-
-  display: flex;
+  color: black;
 `;
 
 const Menulist = () => {
+  // const [list, setList] = useState([]);
+
+  //   // api call with axios in useEffect hook
+  //   useEffect(
+  //     function effectFunction() {
+  //       function fetchData() {
+  //         const response = { LIST };
+
+  //         const result = response.LIST;
+  //         setList(result);
+  //         console.log(result);
+  //         return response;
+  //       }
+  //       fetchData();
+  //     },
+  //     [setList]
+  //   );
   return (
-    <Container>
+    <>
+      {/* {
+        list.map(item => (
+          <MenuLink key={item.id} to={item.to} activeStyle={active}>
+        
+        <Icon>{item.icon}</Icon>
+        <Item>{item.listItem}</Item>
+      </MenuLink>
+        ))
+      } */}
       <MenuLink to='/overview' activeStyle={active}>
-        <Icon src={dashboard} alt='lol' />
-        Overview
+        <DashboardRoundedIcon />
+        <Item>Overview</Item>
       </MenuLink>
       <MenuLink to='/records' activeStyle={active}>
-        <Icon src={records} alt='records' />
-        records
+        <FolderIcon />
+        <Item> Records</Item>
       </MenuLink>
       <MenuLink to='/blog' activeStyle={active}>
-        <Icon src={blog} alt='blog' />
-        blog
+        <ChromeReaderModeIcon />
+        <Item>Blog</Item>
       </MenuLink>
       <MenuLink to='/' activeStyle={active}>
-        <Icon src={printer} alt='print' />
-        Home for now
+        <PrintIcon />
+        <Item>Home</Item>
+      </MenuLink>
+      <MenuLink to='/book-mass' activeStyle={active}>
+        <BookIcon />
+        <Item>Book Mass</Item>
       </MenuLink>
       <MenuLink to='/record' activeStyle={active}>
-      <Icon src={event} alt='events and todos/' />
-        Book Mass
+        <TodayIcon />
+        <Item>Events & Todo</Item>
+      </MenuLink>
+      <MenuLink to='/anouncement' activeStyle={active}>
+        <AnnouncementRoundedIcon />
+        <Item>Anouncement</Item>
       </MenuLink>
       <MenuLink to='/record' activeStyle={active}>
-        <Icon src={event} alt='events and todos/' />
-        Events & Todo
+        <HouseIcon />
+        <Item>Parishes</Item>
+      </MenuLink>
+      <MenuLink to='/about-support' activeStyle={active}>
+        <LiveHelpIcon />
+        <Item>About/ support</Item>
       </MenuLink>
       <MenuLink to='/record' activeStyle={active}>
-        
-        <Icon src={megaphone} alt='anouncement' />
-        Anouncement
+        <InfoIcon />
+        <Item>Information</Item>
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
-        <Icon src={eucharist} alt='parishes' />
-        Parishes
+      <MenuLink to='/faq' activeStyle={active}>
+        <QuestionAnswerIcon />
+        <Item>FaQ</Item>
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
-        <Icon src={conversation} alt='About/ support' />
-        About/ support
-      </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
-        
-        <Icon src={information} alt='information' />
-        information
-      </MenuLink>
-    </Container>
+    </>
   );
 };
 

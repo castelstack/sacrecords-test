@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import SearchIcon from "../../images/Search.png";
+//import SearchIcon from "../../images/Search.png";
+import SearchIcon from '@material-ui/icons/Search';
 
 //import InputSearch from "../../components/input/input.components";
 
 const Container = styled.div`
 display: flex;
 align-items: center;
-
+margin-right: .7rem;
 justify-self: ${(props) =>
   props.end ? "flex-end" : "none"};
 `;
 
-const Icon = styled.img`
+const Icon = styled(SearchIcon)`
 transform: translateX(2rem);
 margin-right: -3px;
 `;
@@ -20,7 +21,7 @@ const InputSearch =styled.input`
 
 padding: 15px 45px;
 
-font-family: Poppins;
+font-family: Antic Slab;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -50,7 +51,7 @@ border-radius: 100px;
 const Search = ({onChange, placeholder, ...props}) => {
   return (
       <Container end='end' >
-          <Icon alt='search' src={SearchIcon} />
+          <Icon />
       <InputSearch icon={SearchIcon} type='text' name='search' placeholder={placeholder} onChange={onChange}/>
          
     </Container>

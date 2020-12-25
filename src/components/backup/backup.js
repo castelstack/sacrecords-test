@@ -20,9 +20,7 @@ const LastBackupInfo = styled.div({
 
 const LastBackupFiles = styled.div({})
 const BackupText = styled.h2({
-  
-fontFamily: 'Poppins',
-fontStyle: 'normal',
+ 
 fontWeight: '500',
 fontSize: '16px',
 lineHeight: '14px',
@@ -33,9 +31,6 @@ color: '#979797',
 })
 
 const BackupTime = styled.h2({
-  
-  fontFamily: "Poppins",
-  fontStyle: "normal",
   fontWeight: "normal",
   fontSize: "18px",
   color: "#061058",

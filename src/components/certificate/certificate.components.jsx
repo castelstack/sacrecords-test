@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HeadText, TextSub } from "../../constants/styles/constant.style";
 
 import CertificateTemp from "./certificate-temp.components";
 import Avatar from "../../images/avatar/avatar.png";
@@ -22,15 +23,8 @@ const SubContainer = styled.div({
   padding: ".5rem",
 });
 
-const Title = styled.h1({
-  fontFamily: "Gilroy",
-  fontStyle: "normal",
-  fontWeight: "600",
-  fontSize: "24px",
-  lineHeight: "29px",
-  /* identical to box height */
-
-  color: "#7C7C7C",
+const Title = styled(HeadText)({
+  
 });
 
 const Headings = styled.div({
@@ -43,11 +37,8 @@ const Headings = styled.div({
   paddingTop: "32.5px",
 });
 
-const Text = styled.h1({
-  fontFamily: "Poppins",
-  fontStyle: "normal",
-  fontWeight: "500",
-  fontSize: "18px",
+const Text = styled(TextSub)({
+  
   lineHeight: "24px",
   letterSpacing: "-0.774737px",
 

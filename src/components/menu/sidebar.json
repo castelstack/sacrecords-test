@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": 1,
+        "listItem": "Overview",
+        "to": "/overview",
+        "icon": "DashboardRoundedIcon"
+    },
+    {
+        "id": 2,
+        "listItem": "Records",
+        "to": "/records",
+        "icon": "AccessAlarm"
+    },
+    {
+        "id": 3,
+        "listItem": "Blog",
+        "to": "/blog",
+        "icon": "<ViewCompactRoundedIcon />"
+    },
+    {
+        "id": 3,
+        "listItem": "Print",
+        "to": "/",
+        "icon": "<ViewCompactRoundedIcon />"
+    },
+    {
+        "id": 4,
+        "listItem": "Book Mass",
+        "to": "/book-mass",
+        "icon": "<ViewCompactRoundedIcon />"
+    }
+]

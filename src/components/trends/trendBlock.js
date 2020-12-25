@@ -1,12 +1,12 @@
 import { Avatar } from '@material-ui/core';
 
 import React from 'react';
-
+import { HeadText, TextSub } from "../../constants/styles/constant.style";
 import styled from 'styled-components';
 
 const Container = styled.div({
     display: 'grid',
-    gridTemplateColumns: 'min-content 250px',
+    gridTemplateColumns: 'min-content 290px',
     width: '360px',
     
 
@@ -18,30 +18,23 @@ const ContainerInfo = styled.div`
 
 `
 
-const Title = styled.h2({
-    fontFamily: 'DM Sans',
-fontStyle: 'normal',
-fontWeight: '500',
+const Title = styled(HeadText)({
+fontWeight: '300',
 fontSize: '21.1569px',
-lineHeight: '1px',
+lineHeight: '0px',
 
-color: '#000000',
+
 })
 
-const Content = styled.h2({
-    fontFamily: 'DM Sans',
-fontStyle: 'normal',
-fontWeight: 'normal',
+const Content = styled(TextSub)({
+
 fontSize: '13.4635px',
 
 
-color: '#000000',
-mixBlendMode: 'normal',
-opacity: '0.4',
+
+
 })
 const Link = styled.a({
-    fontFamily: 'Gilroy-Medium',
-    fontStyle: 'normal',
     fontWeight: 'normal',
     fontSize: '14px',
     lineHeight: '4px',

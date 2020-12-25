@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ControlledOpenSelect from "../../components/dropdown/sort";
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from "victory";
 import styled from "styled-components";
+import { TextSub } from "../../constants/styles/constant.style";
 
 const Container = styled.div({
   width: "40rem",
@@ -18,9 +19,7 @@ const Bar = styled.div({
   transform: "translateY(77%)",
 });
 
-const HeadText = styled.h3({
-  fontFamily: "Poppins",
-
+const HeadText = styled(TextSub)({
   fontWeight: "700",
   fontSize: "12px",
 

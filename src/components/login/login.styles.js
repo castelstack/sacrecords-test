@@ -1,4 +1,6 @@
 import { Input } from "semantic-ui-react";
+import { HeadText } from "../../constants/styles/constant.style";
+
 import styled from "styled-components";
 
 // import { Input } from "semantic-ui-react";
@@ -20,16 +22,12 @@ export const InputForm = styled.form({
   gridGap: "65px",
 });
 
-export const Heading = styled.h1({
-  fontFamily: "Gilroy",
-  fontStyle: "normal",
-  fontWeight: "600",
-  fontSize: "24px",
+export const Heading = styled(HeadText)({
+  
   lineHeight: "0px",
 
   letterSpacing: "0.005em",
   textTransform: "capitalize",
-
   color: "#2E2E2E",
 });
 
@@ -40,13 +38,11 @@ export const InputField = styled(Input)`
 `;
 
 export const LabelText = {
-    fontFamily: "Gilroy",
-    fontWeight: "normal",
     fontSize: "17px",
     lineHeight: "24px",
     letterSpacing: "0.1px",
     color: '#858585',
-    backgroundColor: 'white'
+    
 }
 export const gridStyle = {
     display: 'grid',
@@ -57,8 +53,6 @@ export const border = {
     height: '62px',
 
   paddingLeft: "56px ",
-  fontFamily: "Gilroy",
-  fontStyle: "normal",
   fontWeight: "normal",
   fontSize: "17px",
   lineHeight: "24px",

@@ -10,9 +10,12 @@ import { useTable } from "./useTable";
 import DATAA from "../../components/DATAA.json";
 import RecordDropdown from "../../components/dropdown/recordDd";
 import { useEffect } from "react";
-
+import styled from "styled-components";
 import Search from "../../components/search/search.components";
-
+import { HeadBox } from '../../constants/styles/constant.style';
+const SearchBox = styled(Search)`
+  margin: 4rem 0;
+`;
 const headCells = [
   { id: "firstName", label: "Firstname" },
   { id: "lastName", label: "Username" },
@@ -72,7 +75,10 @@ const Table = () => {
   return (
     <div>
       <Paper>
-        <Search onChange={searchHandler} placeholder='Search records' />
+        <HeadBox flexEnd>
+        <SearchBox onChange={searchHandler} placeholder='Search records' />
+        </HeadBox>
+        
         <TblContainer
           style={{ border: "1px solid #DFE0EB", borderRadius: "10px" }}
         >

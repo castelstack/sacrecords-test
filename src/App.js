@@ -15,9 +15,12 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Homepage from "../src/pages/homepage/homepage";
 import Overview from "./pages/overview/overview";
 import Records from "../src/pages/records/records";
-
+import BookMass from "./pages/bookings/bookings";
 import Blogs from "../src/pages/blog/blog";
-import Sidebar from "../src/components/sidebar/sidebar";
+import Anouncement from "../src/pages/anouncement/anouncement";
+import AboutSupport from "../src/pages/about-support/about-support";
+import Faq from '../src/pages/faq/faq';
+import Sidebar from "../src/containers/sidebar/sidebar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -93,8 +96,13 @@ function App() {
             <Route path='/' exact component={Homepage} />
             <Route path='/overview' component={Overview} />
             <Route path='/records' component={Records} />
-            
+
             <Route path='/blog' component={Blogs} />
+            <Route path='/book-mass' component={BookMass} />
+
+            <Route path='/anouncement' component={Anouncement} />
+            <Route path='/about-support' component={AboutSupport} />
+            <Route path='/faq' component={Faq} />
           </Switch>
         </main>
       </Router>

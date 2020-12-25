@@ -1,13 +1,12 @@
 import { Link } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
+import {HeadText, TextSub} from '../../constants/styles/constant.style'
 
 const Container = styled.div({});
 
-const Title = styled.h1({
-  fontFamily: "Poppins",
-  fontStyle: "normal",
-  fontWeight: "600",
+const Title = styled(HeadText)({
+  
   fontSize: "16px",
   lineHeight: "4px",
   /* identical to box height, or 150% */
@@ -18,10 +17,8 @@ const Title = styled.h1({
   color: "#FFFFFF",
 });
 
-const HeadContent = styled.h3({
-  fontFamily: "Poppins",
-  fontStyle: "normal",
-  fontWeight: "normal",
+const HeadContent = styled(TextSub)({
+  
   fontSize: "20px",
   lineHeight: "5px",
   /* identical to box height */

@@ -1,4 +1,5 @@
 import React from "react";
+import { TextSub } from "../../constants/styles/constant.style";
 
 import styled from "styled-components";
 
@@ -74,20 +75,14 @@ grid-column: 2 /3;
 justify-self: end;
 transform: translate(-35%, -70%);`;
 
-const Title = styled.h1`
+const Title = styled(TextSub)`
   grid-column: 2 /3;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   width: 120px;
-  /* identical to box height */
-
   color: #858585;
 `;
 
-const Count = styled.h3`
+const Count = styled(TextSub)`
   color: #1cd1a1;
   margin-top: 5px;                    
 `;

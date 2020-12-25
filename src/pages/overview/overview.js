@@ -5,7 +5,7 @@ import Trends from "../../components/trends/trends";
 import BlogContent from "../../components/blog-content/blog-content.components";
 import Chart from "../../components/chart/chart";
 import Backup from "../../components/backup/backup";
-
+import OverviewCert from '../../containers/overview-cert/overview-cert';
 import styled from "styled-components";
 
 const Container = styled.div({
@@ -13,8 +13,9 @@ const Container = styled.div({
   flexDirection: "column",
 });
 const CertTrends = styled.div({
-  display: "flex",
-  justifyContent: "space-between",
+  display: "grid",
+  gridTemplateColumns: '1fr min-content',
+ 
   margin: "60px 50px",
   gridGap: "5rem",
 });
@@ -26,11 +27,13 @@ const ChartBackup = styled.div({
   margin: "60px 50px",
 });
 const Overview = () => {
+  
   return (
     <Container>
       
       <OverviewHead />
       <CertTrends>
+        {/* <OverviewCert /> */}
         <Certificate />
         <Trends small/>
       </CertTrends>

@@ -18,12 +18,12 @@ export const table = {
 };
 
 export const tableHead = {
+  fontFamily: 'Antic Slab',
   color: "#1CD1A1",
 };
 
 export const row = {
-  fontFamily: "Poppins",
-  fontStyle: "normal",
+  fontFamily: 'Antic Slab',
   fontWeight: "500",
   fontSize: "16px",
   lineHeight: "24px",
@@ -34,10 +34,4 @@ export const row = {
   color: "#1CD1A1",
 };
 
-//   export const StyledTableRow = withStyles((theme) => ({
-//     root: {
-//       '&:nth-of-type(odd)': {
-//         backgroundColor: theme.palette.action.hover,
-//       },
-//     },
-//   }))(TableRow);export
+

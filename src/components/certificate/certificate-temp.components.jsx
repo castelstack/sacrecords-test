@@ -1,5 +1,5 @@
 import React from "react";
-
+import { TextSub } from "../../constants/styles/constant.style";
 import CertDropdown from '../dropdown/cert-dropdown';
 import styled from "styled-components";
 
@@ -32,8 +32,6 @@ const MemberInfo = styled.div({
 });
 
 const Name = styled.li`
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   width: max-content;
@@ -43,8 +41,6 @@ const Name = styled.li`
 `
 
 const Parish = styled.li({
-  fontFamily: "Poppins",
-  fontStyle: "normal",
   fontWeight: "500",
   fontSize: "14px",
   lineHeight: '8px',
@@ -53,13 +49,9 @@ marginTop: '1rem',
   color: "#B4B7CC",
 });
 
-const Certificate = styled.h1({
+const Certificate = styled(TextSub)({
   display: "flex",
-
-  fontFamily: "Poppins",
-  fontStyle: "normal",
-  fontWeight: "500",
-  fontSize: "18px",
+  
   color: "#1CD1A1",
 });
 const Dot = styled.div({
@@ -76,13 +68,8 @@ const Image = styled.img({
   marginRight: "24px",
 });
 
-const Date = styled.h1({
-  fontFamily: "Poppins",
-  fontStyle: "normal",
-  fontWeight: "normal",
-  fontSize: "18px",
+const Date = styled(TextSub)({
   color: "#061058",
-
   display: 'grid',
   gridTemplateColumns: 'repeat(2, max-content)',
   gridGap: '4rem'
