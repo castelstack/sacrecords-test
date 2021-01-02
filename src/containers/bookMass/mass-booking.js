@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import AllMassTable from "./allMassTable/allMassTable";
-import PrintMassTable from "./print-mass/print-mass-table";
+//import PrintMassTable from "./print-mass/print-mass-table";
 import MassMenu from "./mass-menu";
 import BookaMass from "./book-a-mass/book-a-mass";
 
@@ -26,10 +26,10 @@ const MassBookings = (props) => {
         <Main>
           <Switch>
          
-            <Route path={`${path}/:all-mass`} component={AllMassTable} />
 
+            <Route path={`${path}/:all-mass`} component={AllMassTable} />
             <Route path={`${path}/:bookmass`} component={BookaMass} />
-            <Route path={`${path}/:printmass`} component={PrintMassTable} />
+            <Route path={path} component={AllMassTable} />
           </Switch>
         </Main>
       </Content>

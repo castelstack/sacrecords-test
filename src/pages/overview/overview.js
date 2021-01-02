@@ -17,7 +17,7 @@ const CertTrends = styled.div({
   gridTemplateColumns: '1fr min-content',
  
   margin: "60px 50px",
-  gridGap: "5rem",
+  gridGap: "2rem",
 });
 
 const ChartBackup = styled.div({

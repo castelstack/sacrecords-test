@@ -13,7 +13,7 @@ export const Container = styled.div({
  
   border: "2px solid #f0f0f0",
   borderRadius: "10px",
-  boxShadow: "0 3px 4px rgba(0,0,0,0.15)",
+  boxShadow: ' 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'
 });
 
 export const Content = styled.div`

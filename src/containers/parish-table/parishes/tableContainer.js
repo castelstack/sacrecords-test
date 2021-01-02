@@ -7,11 +7,11 @@ import {
   TableRow,
   TableSortLabel,
 } from "@material-ui/core";
-import { useStyle, tableHead, row } from "./useTable.styles";
+import { useStyle, tableHead, row } from "../../../constants/styles/table.style";
 import { useState } from "react";
 
 // container component carrying only table and table head wrapper
-export const useTable = (records, headCells, filterFn) => {
+export const TableContainer = (mass, headCells, filterFn) => {
   const classes = useStyle();
 
 // number of rows in a table page
@@ -100,8 +100,8 @@ export const useTable = (records, headCells, filterFn) => {
   
   
 
-  const recordsAfterPagingAndSorting = () => {
-    return stableSort( filterFn.fn(records), getComparator(order, orderBy)).slice(
+  const massAfterPagingAndSorting = () => {
+    return stableSort( filterFn.fn(mass), getComparator(order, orderBy)).slice(
       page * rowsPerPage,
       (page + 1) * rowsPerPage
     );
@@ -114,7 +114,7 @@ export const useTable = (records, headCells, filterFn) => {
         page={page}
         rowsPerPageOptions={pages}
         rowsPerPage={rowsPerPage}
-        count={records.length}
+        count={mass.length}
         onChangePage={handleChangePage}
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
@@ -125,6 +125,6 @@ export const useTable = (records, headCells, filterFn) => {
     TblContainer,
     TblHead,
     TblPagination,
-    recordsAfterPagingAndSorting,
+    massAfterPagingAndSorting,
   };
 };

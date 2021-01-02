@@ -5,14 +5,14 @@ import AnnouncementRoundedIcon from "@material-ui/icons/AnnouncementRounded";
 import DashboardRoundedIcon from "@material-ui/icons/DashboardRounded";
 import FolderIcon from "@material-ui/icons/Folder";
 import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
-import PrintIcon from "@material-ui/icons/Print";
+
 import BookIcon from "@material-ui/icons/Book";
 import TodayIcon from "@material-ui/icons/Today";
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 
 import HouseIcon from "@material-ui/icons/House";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
-import InfoIcon from "@material-ui/icons/Info";
+
 import { NavLink } from "react-router-dom";
 
 //import LIST from "./sidebar.json";
@@ -24,7 +24,7 @@ import { NavLink } from "react-router-dom";
 // `;
 
 const Item = styled.h4`
-  margin-left: 0.9rem;
+  margin-left: 0.5rem;
 `;
 const active = {
   color: "white",
@@ -46,9 +46,9 @@ const MenuLink = styled(NavLink)`
     color: gray;
   }
 
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3.1rem;
   font-family: Antic Slab;
-  font-weight: 0;
+  
   font-size: 15px;
   line-height: 19.5px;
   color: black;
@@ -83,6 +83,7 @@ const Menulist = () => {
       </MenuLink>
         ))
       } */}
+      
       <MenuLink to='/overview' activeStyle={active}>
         <DashboardRoundedIcon />
         <Item>Overview</Item>
@@ -95,10 +96,7 @@ const Menulist = () => {
         <ChromeReaderModeIcon />
         <Item>Blog</Item>
       </MenuLink>
-      <MenuLink to='/' activeStyle={active}>
-        <PrintIcon />
-        <Item>Home</Item>
-      </MenuLink>
+     
       <MenuLink to='/book-mass' activeStyle={active}>
         <BookIcon />
         <Item>Book Mass</Item>
@@ -111,7 +109,7 @@ const Menulist = () => {
         <AnnouncementRoundedIcon />
         <Item>Anouncement</Item>
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
+      <MenuLink to='/parish' activeStyle={active}>
         <HouseIcon />
         <Item>Parishes</Item>
       </MenuLink>
@@ -119,10 +117,7 @@ const Menulist = () => {
         <LiveHelpIcon />
         <Item>About/ support</Item>
       </MenuLink>
-      <MenuLink to='/record' activeStyle={active}>
-        <InfoIcon />
-        <Item>Information</Item>
-      </MenuLink>
+     
       <MenuLink to='/faq' activeStyle={active}>
         <QuestionAnswerIcon />
         <Item>FaQ</Item>

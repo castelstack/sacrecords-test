@@ -8,10 +8,10 @@ cursor: pointer;
 
 
 background: #1CD1A1;
-border-radius: 100px;
+border-radius: 5px;
 border: none;
 outline: none;
-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.79);
+box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
 
 font-family: Gilroy;
 font-size: 18px;
@@ -21,7 +21,8 @@ color: #FFFFFF;
 
 &:hover {
     background: #16a47e;
-    box-shadow: 1px -1px 6px -1px rgba(50, 50, 50, 0.79);
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    
 }
 `
 

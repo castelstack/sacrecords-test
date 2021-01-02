@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import BlogBlock from "./blogblock.components";
+import BlogBlockCard from "./blogblock-card";
 
 import bgimg from "./../../images/blog/blog2.png";
-
 
 const BlogBox = styled.div({
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
   gridGap: "1rem",
   objectFit: "cover",
-  margin: '0 2rem'
+  margin: "0 2rem",
 });
 
 class BlogHeads extends Component {
@@ -22,22 +21,22 @@ class BlogHeads extends Component {
         {
           id: 1,
           title: "adelanke",
-          headContent: "Developing Oculus VR",
+          headContent: "Developing Oculus VR Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold",
           content:
-            "Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold.",
+            "Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold.",
           image: { bgimg },
         },
         {
           id: 2,
           title: "adelanke",
-          headContent: "Developing Oculus VR",
+          headContent: "Developing Oculus VR Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold",
           content:
             "Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold.",
           image: { bgimg },
         },
         {
           id: 3,
-          title: "adelanke",
+          title: "adelanke sweet",
           headContent: "Developing Oculus VR",
           content:
             "Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold.",
@@ -73,18 +72,18 @@ class BlogHeads extends Component {
   /** blogbox contains the blogblock(blog heads) */
   render() {
     return (
-     
-        <BlogBox>
-          {this.state.headline.map(({ id, title, headContent, image, ...props }) => (
-            <BlogBlock
+      <BlogBox>
+        {this.state.headline.map(
+          ({ id, title, headContent, image, ...props }) => (
+            <BlogBlockCard
               key={id}
               title={title}
               headContent={headContent}
               image={bgimg}
             />
-          ))}
-        </BlogBox>
-     
+          )
+        )}
+      </BlogBox>
     );
   }
 }

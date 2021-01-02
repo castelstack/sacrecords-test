@@ -7,7 +7,7 @@ import {
   TableRow,
   TableSortLabel,
 } from "@material-ui/core";
-import { useStyle, tableHead, row } from "./print-table.style";
+import { useStyle, tableHead, row } from "../../../constants/styles/table.style";
 import { useState } from "react";
 
 // container component carrying only table and table head wrapper

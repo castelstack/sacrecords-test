@@ -7,11 +7,11 @@ import {
   TableRow,
   TableSortLabel,
 } from "@material-ui/core";
-import { useStyle, tableHead, row } from "../../../constants/styles/table.style";
+import { useStyle, tableHead,  row } from "../../constants/styles/table.style";
 import { useState } from "react";
 
 // container component carrying only table and table head wrapper
-export const TableContainer = (mass, headCells, filterFn) => {
+export const useTable = (records, headCells, filterFn) => {
   const classes = useStyle();
 
 // number of rows in a table page
@@ -40,7 +40,7 @@ export const TableContainer = (mass, headCells, filterFn) => {
     return (
       // table head wrapper
       <TableHead style={tableHead}>
-        <TableRow>
+        <TableRow >
           {headCells.map((headCell) => (
             <TableCell style={row} key={headCell.id}
               sortDirection={orderBy === headCell.id ? order : false}>
@@ -100,8 +100,8 @@ export const TableContainer = (mass, headCells, filterFn) => {
   
   
 
-  const massAfterPagingAndSorting = () => {
-    return stableSort( filterFn.fn(mass), getComparator(order, orderBy)).slice(
+  const recordsAfterPagingAndSorting = () => {
+    return stableSort( filterFn.fn(records), getComparator(order, orderBy)).slice(
       page * rowsPerPage,
       (page + 1) * rowsPerPage
     );
@@ -114,7 +114,7 @@ export const TableContainer = (mass, headCells, filterFn) => {
         page={page}
         rowsPerPageOptions={pages}
         rowsPerPage={rowsPerPage}
-        count={mass.length}
+        count={records.length}
         onChangePage={handleChangePage}
         onChangeRowsPerPage={handleChangeRowsPerPage}
       />
@@ -125,6 +125,6 @@ export const TableContainer = (mass, headCells, filterFn) => {
     TblContainer,
     TblHead,
     TblPagination,
-    massAfterPagingAndSorting,
+    recordsAfterPagingAndSorting,
   };
 };

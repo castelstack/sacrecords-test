@@ -1,31 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import bgimg from "./../../images/blog/blog2.png";
-import BlogBlock from "../../components/blog/blogblock.components";
+//import BlogBlock from "../../components/blog/blogblock.components";
+import BlogBlockCard from '../../components/blog/blogblock-card';
 import TrendBlock from "../../components/trends/trendBlock";
 import { HeadText } from "../../constants/styles/constant.style";
 import Cards from "../../containers/card/card";
 
-const Container = styled.div``;
+const Container = styled.div`
+margin: 0 50px;`;
 
 const ContainerBlogTrends = styled.div`
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns:  1fr max-content;
   grid-gap: 0.5rem;
   
 `;
 
 const BlogBox = styled.div({
   display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
+  gridTemplateColumns: "repeat(2, minmax(15vw, 40vw))",
   gridGap: "1rem",
   objectFit: "cover",
   margin: "0 2rem",
 });
 const TrendsContainer = styled.div({
-  display: "flex",
-  flexDirection: "column",
-  gridGap: "2rem",
+  display: 'flex',
+  flexDirection: 'column',
+  gridGap: "1rem",
   justifyContent: "space-between",
   marginBottom: "1rem",
 });
@@ -44,7 +46,7 @@ class Blogs extends React.Component {
         {
           id: 1,
           title: "adelanke",
-          headContent: "Developing Oculus VR",
+          headContent: "Developing Developing Oculus VR Oculus VR",
           content:
             "Virgin mary day to be remembered by all cattholics. This is for all catholic churches to uphold.",
           image: { bgimg },
@@ -212,7 +214,7 @@ class Blogs extends React.Component {
             {this.state.headline
               .filter((el, idx) => idx < 8)
               .map(({ id, title, headContent, image, link, ...props }) => (
-                <BlogBlock
+                <BlogBlockCard
                   key={id}
                   title={title}
                   headContent={headContent}
@@ -238,6 +240,8 @@ class Blogs extends React.Component {
                 ))}
             </TrendsContainer>
           </TrendingPost>
+
+          
         </ContainerBlogTrends>
         <HeadText padding>Other articles</HeadText>
         <Cards />

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ControlledOpenSelect from "../../components/dropdown/sort";
+
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from "victory";
 import styled from "styled-components";
-import { TextSub } from "../../constants/styles/constant.style";
+import {  HeadText } from "../../constants/styles/constant.style";
 
 const Container = styled.div({
   width: "40rem",
@@ -11,21 +11,15 @@ const Container = styled.div({
     borderRadius: '.6rem',
   boxShadow: "0 9px 6px -6px  rgb(181, 177, 177)",
 });
-const Bar = styled.div({
-  display: "grid",
-  gridTemplateColumns: "repeat(2, max-content)",
-  justifyContent: "center",
-  gridGap: "5rem",
-  transform: "translateY(77%)",
-});
 
-const HeadText = styled(TextSub)({
+
+const Heading = styled(HeadText)({
   fontWeight: "700",
-  fontSize: "12px",
+  fontSize: "18px",
 
   /* or 208% */
 
-  color: "#858585",
+ 
 });
 const customgreen = "#00F2B8";
 const data = [
@@ -40,10 +34,10 @@ class Chart extends Component {
   render() {
     return (
       <Container>
-        <Bar>
-          <HeadText>General Registration Statistics</HeadText>
-          <ControlledOpenSelect />
-        </Bar>
+      
+          <Heading>General Registration Statistics</Heading>
+          
+      
         <VictoryChart
           // domainPadding will add space to each side of VictoryBar to
           // prevent it from overlapping the axis

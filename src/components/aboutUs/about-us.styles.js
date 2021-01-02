@@ -5,6 +5,7 @@ export const Containerr = styled.div({
 
   display: "grid",
   gridTemplateRows: "min-content 1fr",
+  
 });
 
 export const ContainerSub = styled.div({
@@ -12,6 +13,7 @@ export const ContainerSub = styled.div({
   gridTemplateColumns: "repeat(2, 1fr)",
   gridGap: "27px",
   alignItems: "self-start",
+  
 });
 
 export const MainText = styled(HeadText)({
@@ -26,5 +28,6 @@ export const SubText = styled(TextSub)({
   padding: "18px 21px",
   border: "1px solid #EFEFEF",
   boxSizing: "border-box",
-  borderRadius: "22px",
+  borderRadius: "10px",
+  boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'
 });

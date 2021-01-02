@@ -16,6 +16,7 @@ const Container = styled.div({
   display: "grid",
   gridTemplateRows: "repeat(2, min-content)",
   gridGap: "23px",
+  
 });
 
 const ContainerTemp = styled.div({

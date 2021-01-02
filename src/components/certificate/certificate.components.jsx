@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { HeadText, TextSub } from "../../constants/styles/constant.style";
+import { HeadText } from "../../constants/styles/constant.style";
 
 import CertificateTemp from "./certificate-temp.components";
 import Avatar from "../../images/avatar/avatar.png";
 import CustomButton from "../../components/button/button.components";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div({
   
@@ -27,25 +28,32 @@ const Title = styled(HeadText)({
   
 });
 
-const Headings = styled.div({
-  display: "flex",
-  flexGrow: '1',
-  marginLeft: "1.4rem",
-  justifyContent: 'space-between',
-  justifyItems: 'center',
-  borderBottom: "2px solid  #E1E2EB",
-  paddingTop: "32.5px",
-});
 
-const Text = styled(TextSub)({
+
+const Headings = styled.div`
+
+display: grid;
+grid-template-columns: 240px repeat(2, 200px) ;
+justify-content: space-between;
+justify-items: flex-start;
+padding: 1rem;
+border-bottom: 2px solid  #E1E2EB;
+&:nth-child(6) {
   
-  lineHeight: "24px",
+  border-bottom: none;
+ 
+}
+`
+
+const Text = styled(HeadText)({
+  fontSize: '1.2rem',
+  lineHeight: "1px",
   letterSpacing: "-0.774737px",
 
   color: "#061058",
 
   mixBlendMode: "normal",
-  opacity: "0.7",
+  
 });
 
 const Button = styled(CustomButton)({
@@ -111,7 +119,7 @@ class Certificate extends Component {
             <Text>Name</Text>
             <Text>Certificate</Text>
             <Text>Date</Text>
-            <Text></Text>
+            
           </Headings>
 
           {this.state.certificates.map(
@@ -126,7 +134,7 @@ class Certificate extends Component {
               />
             )
           )}
-          <Button value='View all' big />
+          <Link to='/records'><Button value='View all' big /></Link>
         </SubContainer>
       </Container>
     );

@@ -6,8 +6,8 @@ import styled from 'styled-components';
 
 const Container = styled.div({
     display: 'grid',
-    gridTemplateColumns: 'min-content 290px',
-    width: '360px',
+    gridTemplateColumns: 'min-content 260px',
+    width: '280px',
     
 
 })
@@ -19,8 +19,8 @@ const ContainerInfo = styled.div`
 `
 
 const Title = styled(HeadText)({
-fontWeight: '300',
-fontSize: '21.1569px',
+fontWeight: '600',
+fontSize: '21px',
 lineHeight: '0px',
 
 
@@ -28,8 +28,8 @@ lineHeight: '0px',
 
 const Content = styled(TextSub)({
 
-fontSize: '13.4635px',
-
+fontSize: '13px',
+lineHeight: '15px'
 
 
 

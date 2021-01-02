@@ -4,7 +4,10 @@ import { NavLink, useRouteMatch } from "react-router-dom";
 
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+background-color: #F5F5F5;
+height: 100%;
+`;
 
 
 
@@ -48,10 +51,7 @@ const MassMenu = (props) => {
         <MenuLink to={`${url}/bookmass`} activeStyle={active}>
           Book mass
         </MenuLink>
-        <Divider />
-        <MenuLink to={`${url}/printmass`} activeStyle={active}>
-          Print mass
-        </MenuLink>
+       
       </>
     </Container>
   );

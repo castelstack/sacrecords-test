@@ -11,14 +11,17 @@ align-items: center;
 margin-right: .7rem;
 justify-self: ${(props) =>
   props.end ? "flex-end" : "none"};
+  color: white;
+  
 `;
 
 const Icon = styled(SearchIcon)`
 transform: translateX(2rem);
 margin-right: -3px;
+color: white;
 `;
 const InputSearch =styled.input` 
-
+background: rgba(0, 0, 0, 0.25);
 padding: 15px 45px;
 
 font-family: Antic Slab;
@@ -27,22 +30,24 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 
-/* or 240% */
-/*color: #3E3E3E;*/
-
-mix-blend-mode: normal;
-opacity: 0.5;
-
 /* for box */
 width: 320px;
 height: 20px;
 outline: 0;
+color: white;
+border-radius: 5px;
+border: none;
 
-
-border-radius: 100px;
-
+&::placeholder {
+  color: white;
+}
+&:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 &:focus {
-  border-color: #1CD1A1; 
+  
+  
+  
 }
 `;
 

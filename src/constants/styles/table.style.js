@@ -18,17 +18,19 @@ export const table = {
 };
 
 export const tableHead = {
-  color: "#1CD1A1",
+  fontFamily: 'Antic Slab',
+    color: "#1CD1A1",
+  
 };
+
 
 export const row = {
-  fontWeight: "500",
-  fontSize: "16px",
+  fontFamily: 'Antic Slab',
+  fontWeight: "600",
+  fontSize: "18px",
   lineHeight: "24px",
-  /* identical to box height */
-
   letterSpacing: "0.2px",
-
-  color: "#1CD1A1",
+  color: "#061058",
 };
+
 

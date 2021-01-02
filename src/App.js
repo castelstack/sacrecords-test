@@ -18,8 +18,9 @@ import Records from "../src/pages/records/records";
 import BookMass from "./pages/bookings/bookings";
 import Blogs from "../src/pages/blog/blog";
 import Anouncement from "../src/pages/anouncement/anouncement";
+import Parish from "../src/pages/parish/parish";
 import AboutSupport from "../src/pages/about-support/about-support";
-import Faq from '../src/pages/faq/faq';
+import Faq from "../src/pages/faq/faq";
 import Sidebar from "../src/containers/sidebar/sidebar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -101,6 +102,7 @@ function App() {
             <Route path='/book-mass' component={BookMass} />
 
             <Route path='/anouncement' component={Anouncement} />
+            <Route path='/parish' component={Parish} />
             <Route path='/about-support' component={AboutSupport} />
             <Route path='/faq' component={Faq} />
           </Switch>

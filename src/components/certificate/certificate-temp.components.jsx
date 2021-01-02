@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Container = styled.div`
 
 display: grid;
-grid-template-columns: repeat(3, 210px) ;
+grid-template-columns: 240px repeat(2, 200px) ;
 justify-content: space-between;
 justify-items: flex-start;
 padding: 1rem;
@@ -21,7 +21,7 @@ border-bottom: 2px solid  #E1E2EB;
 
 
 const NameParish = styled.ul({
-  marginLeft: '-3.7rem',
+  marginLeft: '-1.7rem',
   listStyleType: 'none'
 });
 
@@ -33,11 +33,12 @@ const MemberInfo = styled.div({
 
 const Name = styled.li`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   width: max-content;
   line-height: 8px;
   color: #061058;
   margin-bottom: .5rem;
+  align-self: flex-end;
 `
 
 const Parish = styled.li({
@@ -63,9 +64,9 @@ const Dot = styled.div({
 });
 
 const Image = styled.img({
-  height: "80px",
-  width: "80px",
-  marginRight: "24px",
+  height: "70px",
+  width: "70px",
+ 
 });
 
 const Date = styled(TextSub)({

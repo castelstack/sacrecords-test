@@ -10,7 +10,8 @@ import CreateAnouncement from './create-anouns/create-anouncement';
 import styled from "styled-components";
 
 
-const Container = styled.div``;
+const Container = styled.div`
+padding: 0 50px;`;
 const Menu = styled.div``;
 const Main = styled.div``;
 

@@ -15,7 +15,8 @@ font-family: Antic Slab;
 
 
 export const TextSub = styled.h3`
-font-family: 'Assistant', sans-serif; 
+font-family: 'Darker Grotesque', sans-serif;
+
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.065em;
@@ -26,7 +27,7 @@ font-family: 'Assistant', sans-serif;
 export const HeadBox = styled.div`
   background-color: #1cd1a1;
   padding: 0 1rem;
-  height: 43px;
+  height: 50px;
   display: flex;
   
   align-items: center;

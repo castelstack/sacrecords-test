@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../../containers/useTable/table";
+import Table from "../../containers/recordsTable/table";
 import styled from "styled-components";
 
 const Container = styled.div`
