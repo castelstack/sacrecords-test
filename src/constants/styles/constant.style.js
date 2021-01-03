@@ -21,7 +21,7 @@ font-family: 'Darker Grotesque', sans-serif;
   line-height: 24px;
   letter-spacing: 0.065em;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 export const HeadBox = styled.div`
