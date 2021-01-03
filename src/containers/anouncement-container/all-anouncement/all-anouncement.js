@@ -69,10 +69,10 @@ const AllAnouncement = () => {
             <ShowMoreText
               /* Default options */
               lines={1}
-              more='Show more'
+              more='Continue reading'
               less='Show less'
               className='content-css'
-              anchorClass='my-anchor-css-class'
+              anchorClass='class-1 class-2'
               onClick={executeOnClick}
               expanded={false}
               style={link}
