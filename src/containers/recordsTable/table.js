@@ -7,12 +7,17 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 import { useTable } from "./useTable";
-import DATAA from "../../components/DATAA.json";
+import WithSpinner from '../../components/with-spinner/with-spinner'
 import RecordDropdown from "../../components/dropdown/recordDd";
 import { useEffect } from "react";
 import styled from "styled-components";
 import Search from "../../components/search/search.components";
 import { HeadBox } from '../../constants/styles/constant.style';
+import Axios from "axios";
+
+
+
+
 const SearchBox = styled(Search)`
   margin: 4rem 0;
 `;
@@ -26,6 +31,7 @@ const headCells = [
 ];
 
 const Table = () => {
+  const [loading, setLoading] = useState(true);
   const [records, setRecords] = useState([]);
   const [filterFn, setFilterFn] = useState({
     fn: (items) => {
@@ -34,20 +40,16 @@ const Table = () => {
   });
 
   // api call with axios in useEffect hook
-  useEffect(
-    function effectFunction() {
-      function fetchData() {
-        const response = { DATAA };
-
-        const result = response.DATAA;
-        setRecords(result);
-        console.log(result);
-        return response;
-      }
-      fetchData();
-    },
-    [setRecords]
-  );
+ 
+  useEffect(() => {
+    
+    const apiUrl = '/recor';
+    Axios.get(apiUrl).then((repos) => {
+      const allRecord = repos.data;
+      setRecords(allRecord);
+      setLoading(false)
+    });
+  }, [setRecords, setLoading]);
 
   // function from useTable file
   const {
@@ -78,33 +80,43 @@ const Table = () => {
         <HeadBox flexEnd>
         <SearchBox onChange={searchHandler} placeholder='Search records' />
         </HeadBox>
+        {
+          loading ?
+            <WithSpinner />
+            :
         
-        <TblContainer
-          style={{ border: "1px solid #DFE0EB", borderRadius: "10px" }}
-        >
-          <TblHead />
-          <TableBody>
-            {recordsAfterPagingAndSorting().map((item) => (
-              <TableRow key={item.id}>
-                <TableCell>{item.firstName}</TableCell>
-                <TableCell>{item.lastName}</TableCell>
-                <TableCell>
-                  <>
-                    <Typography>{item.stateOfOrigin}</Typography>
-                    <Typography color='textSecondary' variant='subtitle2'>
-                      {item.lga}
-                    </Typography>
-                  </>
-                </TableCell>
-                <TableCell>{item.gender}</TableCell>
-                <TableCell>{item.nameOfPriest}</TableCell>
-                <TableCell>
-                  <RecordDropdown />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </TblContainer>
+            <TblContainer
+              style={{ border: "1px solid #DFE0EB", borderRadius: "10px" }}
+            >
+              <TblHead />
+              <TableBody>
+                {
+                  recordsAfterPagingAndSorting().map((item) => (
+                    <TableRow key={item.id}>
+                      <TableCell>{item.firstName}</TableCell>
+                      <TableCell>{item.lastName}</TableCell>
+                      <TableCell>
+                        <>
+                          <Typography>{item.stateOfOrigin}</Typography>
+                          <Typography color='textSecondary' variant='subtitle2'>
+                            {item.lga}
+                          </Typography>
+                        </>
+                      </TableCell>
+                      <TableCell>{item.gender}</TableCell>
+                      <TableCell>{item.nameOfPriest}</TableCell>
+                      <TableCell>
+                        <RecordDropdown />
+                      </TableCell>
+                    </TableRow>
+                  ))
+                }
+            
+          
+              </TableBody>
+          
+            </TblContainer>
+        }
         <TblPagination />
       </Paper>
     </div>

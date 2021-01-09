@@ -13,7 +13,7 @@ import Frame from "../../images/daily/frame.png";
 import Activity from "../../images/daily/activity.png";
 
 const Container = styled.div({
-  margin: "5px 50px",
+  margin: "50px 50px",
   
   display: "grid",
   gridTemplateColumns: "repeat(3, min-content)",

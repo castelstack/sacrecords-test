@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: "600",
 
     lineHeight: "29px",
-    fontFamily: "Antic Slab",
+    fontFamily: "poppins",
   },
   details: {
     backgroundColor: "rgb(235, 233, 233)"

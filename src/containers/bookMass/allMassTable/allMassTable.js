@@ -15,7 +15,7 @@ const SearchBox = styled(Search)`
 // array of table head cells label and data<thead>
 const headCells = [
   { id: "name", label: "Name" },
-  { id: "reason", label: "Reason" },
+  
   { id: "massTime", label: "Mass Time" },
   { id: "count", label: "Count" },
   { id: "date", label: "Date", disabledSorting: true },

@@ -18,6 +18,7 @@ export const useTable = (records, headCells, filterFn) => {
   const pages = [5, 10, 15];
 
   // useStates
+  
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(pages[page]);
   const [order, setOrder] = useState();
@@ -105,6 +106,7 @@ export const useTable = (records, headCells, filterFn) => {
       page * rowsPerPage,
       (page + 1) * rowsPerPage
     );
+    
   };
 
   const TblPagination = () => {

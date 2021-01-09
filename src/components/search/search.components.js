@@ -20,13 +20,12 @@ transform: translateX(2rem);
 margin-right: -3px;
 color: white;
 `;
+
 const InputSearch =styled.input` 
 background: rgba(0, 0, 0, 0.25);
 padding: 15px 45px;
 
 font-family: Antic Slab;
-font-style: normal;
-font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 
@@ -40,6 +39,7 @@ border: none;
 
 &::placeholder {
   color: white;
+  
 }
 &:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

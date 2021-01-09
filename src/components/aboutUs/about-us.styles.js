@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HeadText, TextSub } from "../../constants/styles/constant.style";
 export const Containerr = styled.div({
-  margin: "23px 50px",
+  margin: "50px 50px",
 
   display: "grid",
   gridTemplateRows: "min-content 1fr",
@@ -11,7 +11,7 @@ export const Containerr = styled.div({
 export const ContainerSub = styled.div({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gridGap: "27px",
+  gridGap: "45px",
   alignItems: "self-start",
   
 });

@@ -26,7 +26,7 @@ const MenuLink = styled(NavLink)`
   }
 
   padding: 1.5rem 2rem;
-  font-family: Antic Slab;
+  font-family: Poppins;
 
   font-size: 15px;
   line-height: 19.5px;

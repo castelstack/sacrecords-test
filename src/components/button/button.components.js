@@ -8,28 +8,34 @@ cursor: pointer;
 
 
 background: #1CD1A1;
-border-radius: 5px;
+border-radius: 50px;
 border: none;
 outline: none;
-box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
 
-font-family: Gilroy;
+
+font-family: Poppins;
 font-size: 18px;
 line-height: 18px;
 
 color: #FFFFFF;
-
+transition: all .2s ease-out;
 &:hover {
     background: #16a47e;
-    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
-    
+    box-shadow: 5px 8px 9px -10px rgba(0,0,0,0.4);
+    transform: translateY(-.6px);
+}
+
+&:active {
+    background: #1CD1A1;
+    box-shadow: 5px 8px 9px -10px rgba(0,0,0,0.4);
+    transform: translateY(.6px);
 }
 `
 
-const CustomButton = ({value, onChange, ...otherProps}) => {
+const CustomButton = ({value, onChange, type, ...otherProps}) => {
     return (
         
-        <Button onChange={onChange} {...otherProps}>{value}</Button>
+        <Button onChange={onChange} type={type} {...otherProps}>{value}</Button>
         
     );
 };

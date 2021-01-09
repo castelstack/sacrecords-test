@@ -7,13 +7,12 @@ export const Container = styled.div({
   gridTemplateColumns: "1fr 1fr",
   alignContent: "center",
 
-  width: "16.5rem",
+  width: "300px",
   height: "164px",
 
- 
   border: "2px solid #f0f0f0",
   borderRadius: "10px",
-  boxShadow: ' 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)'
+  boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
 });
 
 export const Content = styled.div`
@@ -21,13 +20,13 @@ export const Content = styled.div`
   align-items: center;
 
   justify-items: center;
-  margin-left: 22px;
+  margin-left: 25px;
 
   grid-row: 2 / 3;
 `;
 export const ContentSub = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   grid-row: 2 / 3;
   transform: translate(-35%, 10%);
 `;
@@ -40,18 +39,16 @@ export const CountBox = styled.div`
 `;
 
 export const Frame = styled.img`
-height: 6rem;`;
+  height: 6rem;
+`;
 
 export const Num = styled(HeadText)`
-  transform: translate(-182%, -20%);
+  transform: translate(-200%, -20%);
   display: block;
-font-weight: normal;
-font-size: 36px;
+  font-weight: normal;
+  font-size: 36px;
 
-
-
-
-color: #FCBC04;
+  color: #fcbc04;
 `;
 
 export const Nav = styled.img`
@@ -77,17 +74,13 @@ export const Base = styled.img`
 
 export const Title = styled(TextSub)`
   grid-column: 2 /3;
-  font-family: Poppins;
-
-  font-size: 16px;
   
-  width: 120px;
-
-
+ 
   color: #858585;
 `;
 
 export const Count = styled(TextSub)`
   color: #1cd1a1;
   margin-top: 5px;
+  
 `;

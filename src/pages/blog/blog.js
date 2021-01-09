@@ -12,18 +12,19 @@ margin: 0 50px;`;
 
 const ContainerBlogTrends = styled.div`
   display: grid;
-  grid-template-columns:  1fr max-content;
-  grid-gap: 0.5rem;
-  
+  grid-template-columns:  1fr 280px;
+  grid-gap: 2rem;
+  margin-bottom: 60px;
 `;
 
 const BlogBox = styled.div({
   display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(15vw, 40vw))",
-  gridGap: "1rem",
+  gridTemplateColumns: "repeat(2, minmax(19rem, 26rem))",
+  gridGap: "2rem",
   objectFit: "cover",
   margin: "0 2rem",
 });
+
 const TrendsContainer = styled.div({
   display: 'flex',
   flexDirection: 'column',

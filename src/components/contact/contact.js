@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextSub, HeadText } from "../../constants/styles/constant.style";
+import { TextSub, MedHeadText } from "../../constants/styles/constant.style";
 import CallIcon from '@material-ui/icons/Call';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -18,11 +18,13 @@ line-height: 1px;
 margin-left: .4px;
 `;
 const Contact = () => {
+    
     return (
 
    <Container>
             <>
-            <HeadText>CONTACT INFORMATION</HeadText>
+                <MedHeadText>CONTACT INFORMATION</MedHeadText>
+               
             <ContactItem><LocationOnIcon  style={{ color: "#FCBC04" }}/><ContactInfo>Owerri</ContactInfo></ContactItem>
             <ContactItem><CallIcon style={{ color: "#FCBC04" }}/><ContactInfo>08108776518</ContactInfo></ContactItem>
             <ContactItem><EmailIcon style={{ color: "#FCBC04" }}/><ContactInfo>sacrecord@gmail.com</ContactInfo></ContactItem>

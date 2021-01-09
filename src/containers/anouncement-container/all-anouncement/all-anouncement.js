@@ -28,18 +28,11 @@ const Anouncement = styled(TextSub)`
   text-decoration: none;
 `;
 
-const link = 
-
-{  color: 'blue',
-  textDecoration: 'none',}
-
-
-
 
 
 const executeOnClick = (isExpanded) => {
   console.log(isExpanded);
-}
+};
 
 const AllAnouncement = () => {
   const [anouncements, setAnouncements] = useState([]);
@@ -67,15 +60,12 @@ const AllAnouncement = () => {
           <Title>{item.title}</Title>
           <Anouncement>
             <ShowMoreText
-              /* Default options */
+              /* config showing showing just one line*/
               lines={1}
               more='Continue reading'
               less='Show less'
-              className='content-css'
-              anchorClass='class-1 class-2'
               onClick={executeOnClick}
               expanded={false}
-              style={link}
             >
               {item.anouncement}
             </ShowMoreText>

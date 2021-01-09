@@ -2,7 +2,7 @@ import React from "react";
 //import { useParams } from "react-router-dom";
 import Input from "../input/input.components";
 import CustomButton from "../button/button.components";
-import { HeadText } from "../../constants/styles/constant.style";
+import { MedHeadText } from "../../constants/styles/constant.style";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -31,7 +31,7 @@ const SendMsg = (props) => {
   return (
     <Container>
       
-        <HeadText>SEND US A MESSAGE</HeadText>
+        <MedHeadText>SEND US A MESSAGE</MedHeadText>
       
       <FormBox>
         <Input placeholder='Name...' name='Name' />

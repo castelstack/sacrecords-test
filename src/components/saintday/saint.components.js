@@ -7,7 +7,7 @@ import Sainttemp from "./sainttemp.components";
 
 const Container = styled.div({
   width: "min-content",
-  padding: "23px  122px 49px",
+  padding: "25px  122px 49px",
 
   background: "rgba(242, 242, 242, 0.45)",
 });

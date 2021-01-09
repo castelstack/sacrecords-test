@@ -17,16 +17,16 @@ const MenuLink = styled(NavLink)`
   transition: all 0.5s ease-in;
 
   padding: 1.5rem 2rem;
-  font-family: Antic Slab;
-  font-weight: bold;
-  font-size: 15px;
+  font-family: Poppins;
+  
+  font-size: 13px;
   line-height: 19.5px;
   color: #3e3e3e;
   text-decoration: none;
 
   &:hover {
     background: rgb(235, 233, 233);
-    color: gray;
+    color: black;
   }
 `;
 const active = {

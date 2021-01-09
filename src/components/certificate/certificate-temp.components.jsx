@@ -52,7 +52,7 @@ marginTop: '1rem',
 
 const Certificate = styled(TextSub)({
   display: "flex",
-  
+  alignItems: 'center',
   color: "#1CD1A1",
 });
 const Dot = styled.div({

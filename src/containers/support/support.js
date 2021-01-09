@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Container = styled.div`
 display: grid;
 grid-template-rows: repeat(2, min-content);
-width: 29rem;
+width: 26rem;
 `;
 const Support = () => {
     return (

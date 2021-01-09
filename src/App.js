@@ -21,6 +21,7 @@ import Anouncement from "../src/pages/anouncement/anouncement";
 import Parish from "../src/pages/parish/parish";
 import AboutSupport from "../src/pages/about-support/about-support";
 import Faq from "../src/pages/faq/faq";
+import CreateRecords from '../src/pages/create-records/create-records';
 import Sidebar from "../src/containers/sidebar/sidebar";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -105,6 +106,7 @@ function App() {
             <Route path='/parish' component={Parish} />
             <Route path='/about-support' component={AboutSupport} />
             <Route path='/faq' component={Faq} />
+            <Route path='/create-records' component={CreateRecords} />
           </Switch>
         </main>
       </Router>

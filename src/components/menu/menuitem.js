@@ -43,15 +43,15 @@ const MenuLink = styled(NavLink)`
   transition: all 0.5s ease-in;
   &:hover {
     background: rgb(235, 233, 233);
-    color: gray;
+    color: black;
   }
 
   padding: 1.5rem 3.1rem;
-  font-family: Antic Slab;
+  font-family: Poppins;
   
-  font-size: 15px;
+  font-size: 13px;
   line-height: 19.5px;
-  color: black;
+  color: #424242;
 `;
 
 const Menulist = () => {

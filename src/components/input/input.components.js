@@ -16,8 +16,9 @@ const InputField = styled.input`
   padding-top: 11.5px;
   padding-bottom: 11.5px;
 
-  width: 590px;
-  height: 60px;
+
+  width: ${props => (props.small ? '168px' : '590px')};
+height: ${props => (props.small ? '46px' : '60px')};
   outline: none;
 
   font-weight: 100;
@@ -44,10 +45,10 @@ const Label = styled.label({
 });
 
 // customize input component
-const Input = ({ placeholder, name, onChange }) => {
+const Input = ({ placeholder, name, onChange, label, ...props }) => {
   return (
     <Container>
-      <Label>{name}</Label>
+      <Label>{placeholder}</Label>
       <InputField placeholder={placeholder} onChange={onChange}/>
     </Container>
   );

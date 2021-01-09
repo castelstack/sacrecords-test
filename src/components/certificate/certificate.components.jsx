@@ -57,8 +57,8 @@ const Text = styled(HeadText)({
 });
 
 const Button = styled(CustomButton)({
-  alignSelf: 'flex-end',
- 
+  
+ margin: '1rem 1rem'
 });
 
 class Certificate extends Component {

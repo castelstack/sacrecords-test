@@ -20,7 +20,7 @@ const Container = styled.div({
 });
 
 const SectionSaint = styled.div({
-  margin: "54px 0px",
+  margin: "70px 0px",
 
   display: "grid",
   gridTemplateColumns: "min-content 1fr",

@@ -19,15 +19,16 @@ justify-content: center;
 justify-items: center;
 padding: 3rem 3rem;
 box-shadow: 0 3px 4px rgba(0,0,0,0.15);
-height: 395px;
-width: 340px;
+
+width: 320px;
 `;
 
 const AboutTitle = styled(HeadText)`
-font-size: 1.1rem;
+font-size: 16px;
 color: black`;
 const AboutText = styled(TextSub)`
-font-size: .9rem;
+font-size: 13px;
+font-weight: 200;
 justify-items: center;
 `;
 const About = () => {

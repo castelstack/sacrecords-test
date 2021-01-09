@@ -14,10 +14,10 @@ const Container = styled.div({
 });
 const CertTrends = styled.div({
   display: "grid",
-  gridTemplateColumns: '1fr min-content',
+  gridTemplateColumns: '1fr 280px',
  
   margin: "60px 50px",
-  gridGap: "2rem",
+  gridGap: "4rem",
 });
 
 const ChartBackup = styled.div({

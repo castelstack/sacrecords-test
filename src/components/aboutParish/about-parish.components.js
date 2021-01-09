@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CustomButton from "../button/button.components";
 
-
-import { Container, ParishInfo, ParishName} from './about-parish.styles'
+import { Container, ParishInfo, ParishName } from "./about-parish.styles";
 
 const ParishDetails = () => {
   return (
@@ -15,7 +15,9 @@ const ParishDetails = () => {
         history with radical innovations that include college and Cubism, which
         destroyed the stranglehold of{" "}
       </ParishInfo>
-      <CustomButton value='Go to blog' big />
+      <Link to='parish'>
+        <CustomButton value='More Parish' big />
+      </Link>
     </Container>
   );
 };

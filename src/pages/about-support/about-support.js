@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadText } from "../../constants/styles/constant.style";
+import { MedHeadText } from "../../constants/styles/constant.style";
 import About from '../../containers/about/about';
 import Support from '../../containers/support/support';
 import SendMsg from '../../components/Send-msg/send-msg';
@@ -15,7 +15,7 @@ margin-top: 3rem;`;
 const AboutSupport = () => {
     return (
         <Container>
-            <HeadText>ABOUT</HeadText>
+            <MedHeadText>ABOUT</MedHeadText>
             <About />
             
             <Grid><Support /><SendMsg/></Grid>

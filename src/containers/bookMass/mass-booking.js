@@ -8,7 +8,8 @@ import AllMassTable from "./allMassTable/allMassTable";
 import MassMenu from "./mass-menu";
 import BookaMass from "./book-a-mass/book-a-mass";
 
-const Container = styled.div``;
+const Container = styled.div`
+margin: 23px 50px;`;
 
 const Menu = styled.div``;
 const Main = styled.div``;

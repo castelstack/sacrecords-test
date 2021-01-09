@@ -18,7 +18,7 @@ export const table = {
 };
 
 export const tableHead = {
-  fontFamily: 'Antic Slab',
+  fontFamily: 'poppins',
     color: "#1CD1A1",
   
 };

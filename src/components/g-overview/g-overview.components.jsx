@@ -11,7 +11,7 @@ import Dropdown from "../../images/daily/drpdwn.png";
 import Frame from "../../images/daily/frame.png";
 
 const Container = styled.div({
-  margin: "5px 50px",
+  margin: "8px 50px",
 
   display: "grid",
   gridTemplateRows: "repeat(2, min-content)",
@@ -21,7 +21,7 @@ const Container = styled.div({
 
 const ContainerTemp = styled.div({
   display: "grid",
-  gridTemplateColumns: "repeat(4, min-content)",
+  gridTemplateColumns: "repeat(3, min-content)",
   justifyContent: "space-between",
   // justifyItems: 'center'
 });
@@ -55,16 +55,7 @@ const OverviewHead = () => {
           nav={Nav}
           icon={Dropdown}
         />
-        <OverviewTemp
-          frame={Frame}
-          num='45'
-          title='OverviewHead Activities'
-          count='0'
-          base={Base}
-          nav={Nav}
-          icon={Dropdown}
-          margin
-        />
+       
 
         <OverviewTemp
           frame={Frame}
